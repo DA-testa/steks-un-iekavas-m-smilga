@@ -22,16 +22,12 @@ def find_mismatch(text):
 def main():
     text = ""
     text = input()
-    if(text[0] == "I"):
-        text.pop()
-        text.pop()
-        text.pop()
+    if(text == "I"):
+        text = input()
         
     else:
-        if(text[0] == "F"):
-            text.pop()
-            text.pop()
-            text.pop()
+        if(text == "F"):
+            text = input()
             fails = open(text)
             text = fails.read()
     
