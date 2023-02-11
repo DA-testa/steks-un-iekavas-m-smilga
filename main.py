@@ -21,16 +21,12 @@ def find_mismatch(text):
 
 def main():
     text = ""
-    ievadesTips = input()
-    print(ievadesTips)
-    if(ievadesTips == "I"):
-        text = input()
-    else:
-        if(ievadesTips == "F"):
-            failsName = input()
-            fails = open(failsName)
-            text = fails.read()
-    print(text)
+    text = input()
+    if(text == "F"):
+        failsName = input()
+        fails = open(failsName)
+        text = fails.read()
+
     mismatch = find_mismatch(text)
     oldLen = 0
 
