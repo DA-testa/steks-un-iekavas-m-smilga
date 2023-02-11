@@ -20,6 +20,7 @@ def find_mismatch(text):
 
 
 def main():
+    text = ""
     ievadesTips = input()
     if(ievadesTips == "I"):
         text = input()
