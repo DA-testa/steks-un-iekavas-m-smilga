@@ -22,6 +22,7 @@ def find_mismatch(text):
 def main():
     text = ""
     text = input()
+    print(" " + text + " ")
     if(text == "F"):
         failsName = input()
         fails = open(failsName)
