@@ -20,7 +20,14 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
+    ievadesTips = input()
+    if(ievadesTips == "I"):
+        text = input()
+    else:
+        if(ievadesTips == "F"):
+            failsName = input()
+            fails = open(failsName)
+            text = fails.read()
     mismatch = find_mismatch(text)
     oldLen = 0
 
