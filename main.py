@@ -22,6 +22,7 @@ def find_mismatch(text):
 def main():
     text = ""
     ievadesTips = input()
+    print(ievadesTips)
     if(ievadesTips == "I"):
         text = input()
     else:
@@ -29,6 +30,7 @@ def main():
             failsName = input()
             fails = open(failsName)
             text = fails.read()
+    print(text)
     mismatch = find_mismatch(text)
     oldLen = 0
 
