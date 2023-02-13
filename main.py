@@ -20,10 +20,8 @@ def find_mismatch(text):
 
 
 def main():
+    """
     text = input()
-    print("1_" + str(len(text)) + "_1")
-    text2 = input()
-    print("1_" + str(len(text2)) + "_1")
     if(text[0] == "F"):
         text = text[3:]
         fails = open(text)
@@ -31,21 +29,18 @@ def main():
     else:
         if(text[0] == "I"):
             text = text[3:]
-    
-
         """
+
     text = ""
     text = input()
-    if(text == "I"):
+    if(text[0] == "I"):
         text = input()
         
     else:
-        if(text == "F"):
+        if(text[0] == "F"):
             text = input()
             fails = open(text)
             text = fails.read()
-
-    """
     
     mismatch = find_mismatch(text)
     oldLen = 0
