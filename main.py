@@ -8,7 +8,7 @@ def are_matching(left, right):
 
 
 def find_mismatch(text):
-    opening_brackets_stack = []
+    #opening_brackets_stack = []
     iekavas = []
     for i, next in enumerate(text):
         if next in "([{":
@@ -21,6 +21,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
+    print(len(text))
     if(text[0] == "F"):
         text = text[3:]
         fails = open(text)
@@ -28,6 +29,7 @@ def main():
     else:
         if(text[0] == "I"):
             text = text[3:]
+    
 
         """
     text = ""
