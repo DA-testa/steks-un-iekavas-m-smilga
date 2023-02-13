@@ -21,7 +21,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    print(len(text))
+    print("Xx__" + str(len(text)) + "__xX")
     if(text[0] == "F"):
         text = text[3:]
         fails = open(text)
